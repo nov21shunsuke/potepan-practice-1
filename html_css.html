@@ -7,42 +7,53 @@
   </head>
   <body>
     <!-- ここに本体を書いていきましょう -->
-     <header>
-      <a class = "HeaderLogo" href="/courses/rails-career/">
-        <img class="header-logo" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/header-logo.png">
-      </a>
-      
 
-      <nav class="header-list">
-        <ul>
-          <li><a href="#">CONTENT<br>学習内容</a></li>
-          <li><a href="#">INTERVIEW<br>受講者の声</a></li>
-          <li><a href="#">FAQ<br>よくある質問</a></li>
-          <li><a href="#">RECRUIT<br>採用企業様へ</a></li>
-          <li><a href="#">U29<br>29歳以下の方へ</a></li>
-          <li><button id="header-button" href="#">無料カウンセリング</button></li>
-        </ul>
-      </nav>
-     </header>
-     <div class="main">
-      <div class = "container">
-        <div class="background-image">
-          <img id = "left-rectangle" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/left-rectangle.svg">
-          <img id = "right-rectangle" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/right-rectangle.svg">
-          <img id = "fill-rectangle" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/fill-rectangle.svg">
-          <img id = "main-visual" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/main-visual.webp">
-          <img id="badge" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/badge.svg">
+     <header class = "Header">
+        <div class="HeaderContainer">
+          <a class = "HeaderLogo" href="/courses/rails-career/">
+          <img class="HeaderLogoImage-large" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/header-logo.png">
+          <img class="HeaderLogoImage-small" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/header-logo-sp.png">
+          </a>
+
+          <nav class="HeaderNav">
+          <div class = "HeaderNavHamburger">
+            <span class = "HeaderNavHamburger_line"></span>
+            <span class = "HeaderNavHamburger_line"></span>
+            <span class = "HeaderNavHamburger_line"></span>
+          </div>
+          <ul class="HeaderNavList">
+            <li><a href="#">CONTENT<br>学習内容</a></li>
+            <li><a href="#">INTERVIEW<br>受講者の声</a></li>
+            <li><a href="#">FAQ<br>よくある質問</a></li>
+            <li><a href="#">RECRUIT<br>採用企業様へ</a></li>
+            <li><a href="#">U29<br>29歳以下の方へ</a></li>
+            <li><button id="header-button" href="#">無料カウンセリング</button></li>
+          </ul>
+          </nav>
         </div>
-        <div class="FirstViewContent">
-          <h2>実践的カリキュラムと<br>豊富な提携求人で<br>確実にITエンジニアへ</h2>
-          <button id="main-button" href="https://camp.potepan.com/contact">まずは無料カウンセリングへ</button>
-          <p>※ショッパーズアイ「プログラミングスクール10社を対象にしたサイト比較イメージ調査<br>
-          （2020 年 5 月 22 日～25 日）」より全国の22～49歳の男女691名へのインターネット調査</p>
+     </header>
+
+    <div class="main">
+      <div class = "FirstView">
+        <img id = "whole-image-for-small-display" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/whole-visual.webp">
+        <img id = "left-rectangle" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/left-rectangle.svg">
+        <img id = "right-rectangle" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/right-rectangle.svg">
+        <img id = "fill-rectangle" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/fill-rectangle.svg">
+        <img id = "main-visual" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/main-visual.webp">
+        <div class = "FirstViewContainer">
+          <div class="FirstViewContent">
+            <h2 class="FirstViewContentTitle">
+              実践的カリキュラムと<br>
+              豊富な提携求人で<br>
+              確実にITエンジニアへ
+              <img id="badge" src="https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/badge.svg">
+            </h2>
+            <button id="main-button" href="https://camp.potepan.com/contact">まずは無料カウンセリングへ</button>
+            <p>※ショッパーズアイ「プログラミングスクール10社を対象にしたサイト比較イメージ調査<br>
+            （2020 年 5 月 22 日～25 日）」より全国の22～49歳の男女691名へのインターネット調査</p>
+          </div>
         </div>
       </div>
      </div>
-     <footer>
-
-     </footer>
   </body>
 </html>
