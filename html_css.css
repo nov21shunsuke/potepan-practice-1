@@ -58,25 +58,24 @@ body {
 
 @media (max-width: 767px) {
 
-.HeaderContainer {
-    margin: 0 16px;
-}
+    .HeaderContainer {
+        margin: 0 16px;
+    }
 
-.HeaderLogoImage-large {
-    display: none;
-}
+    .HeaderLogoImage-large {
+        display: none;
+    }
 
-.HeaderLogoImage-small {
-    display: block;
-}
-
+    .HeaderLogoImage-small {
+        display: block;
+    }
 }
 
 @media (max-width: 414px) {
-.Header {
-    height: 48px;
-    padding: 0;
-}
+    .Header {
+        height: 48px;
+        padding: 0;
+    }
 }
 
 .HeaderLogo:hover {
