@@ -154,7 +154,6 @@ header a {
     .HeaderNavHamburger_line:last-child {
         top: 100%;
     }
-
 }
 
 
@@ -168,9 +167,6 @@ header a {
     }
 
 }
-
-
-
 
 
 /*--- メイン -----------------------------------*/
@@ -243,10 +239,6 @@ header a {
   display: none;
 }
 }
-
-
-
-
 
 .FirstViewContainer {
     max-width: 1040px;
@@ -336,5 +328,4 @@ header a {
     max-width: 500px;
     width: 90%;
 }
-
 }
