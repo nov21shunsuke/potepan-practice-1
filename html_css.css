@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    padding: 0;
+    margin: 0;
+}
+
 body {
     margin: 0;
 }
@@ -10,12 +15,15 @@ body {
 
 .Header {
     display: grid;
-    width: 100%;
     height: 70px;
-    position: absolute;
-    z-index: 10;
-    align-items: center;
     background-color: white;
+    width: 100%;
+    align-items: center;
+    
+}
+
+.Header-Common {
+    box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.05);
 }
 
 .HeaderContainer {
@@ -88,6 +96,7 @@ body {
     gap:  45px;
     list-style: none;
     text-align: center;
+    font-weight: 400;
 }
 
 header li {
@@ -96,6 +105,7 @@ header li {
     float: left;
     font-size: 10px;
     font-weight: bold;
+
 }
 
 header a {
@@ -172,72 +182,77 @@ header a {
 
 .main {
   width: 100%;
-  
+  display: block;
 }
+
 
 .FirstView {
     position: relative;
-    width: 100%;
     height: 739px;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
-@media (min-width:769px) {
+
+/*---背景画像----------------------------*/
+
+.FirstViewBackgroundImageForPC {
+    position: absolute;
+    z-index: -1;
+}
 
 #whole-image-for-small-display {
     display: none;
+    width: 100%;
+    margin-bottom: 7px;
 }
 
-#left-rectangle {
-  position: absolute;
-  top: 0px;
+#LeftRectangle {
+  top: -70px;
   left: 0px;
 }
 
-#fill-rectangle {
-  position: absolute;
-  top: 154px;
+#FillRectangle {
+  top: 84px;
   left: -70px;
 }
 
-#right-rectangle {
-  position: absolute;
-  bottom: -35px;
+#RightRectangle {
+  bottom: 70px;
   right: 0px;
 }
 
-#main-visual {
-  position: absolute;
-  top: 0px;
+#MainVisual {
+  top: -70px;
   right: 0px;
   width: 775px;
-}
-
 }
 
 @media (max-width: 767px) {
 
 #whole-image-for-small-display {
-    width: 100%;
+    display: block;   
 }
 
 #LeftRectangle {
   display: none;
 }
 
-#right-rectangle {
+#RightRectangle {
   display: none;
 }
 
-#fill-rectangle {
+#FillRectangle {
   display: none;
 }
 
-#main-visual {
+#MainVisual {
   display: none;
 }
+
 }
+
+/*-------------------------------------*/
+/*---FirstView コピーライト--------------*/
+
 
 .FirstViewContainer {
     max-width: 1040px;
@@ -248,13 +263,47 @@ header a {
 }
 
 
-
-
 .FirstViewContent {
     display: block;
     width: fit-content;
     position: relative;
 }
+
+.FirstViewContentTitle{
+    font-size: 42px;
+    margin-bottom: 16px;
+    font-family: "Lato", sans-serif;
+}
+
+.FirstViewContent p {
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(50, 49, 49);
+}
+
+.FirstViewContent button {
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    height: 64px;
+    border-radius: 30px;
+    font-weight: 600;
+    border: 0px;
+    padding: 0 20px;
+    background-color: #F79214;
+    transition: opacity 0.2s ease;
+    margin-bottom: 16px;
+}
+
+.FirstViewContent button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+
+
+
 
 #badge {
     position: absolute;
@@ -262,34 +311,6 @@ header a {
     right: -150px;
 }
 
-
-.FirstViewContentTitle{
-    font-size: 42px;
-    margin-bottom: 16px;
-}
-
-.FirstViewContent p {
-    font-size: 12px;
-    color: rgb(50, 49, 49);
-}
-
-.FirstViewContent button {
-    color: white;
-    font-size: 18px;
-    width: 500px;
-    height: 60px;
-    border-radius: 30px;
-    font-weight: 600;
-    border: 0px;
-    padding: 0 20px;
-    background-color: #F79214;
-    transition: opacity 0.2s ease;
-}
-
-.FirstViewContent button:hover{
-    cursor: pointer;
-    opacity: 0.8;
-}
 
 @media (max-width: 1080px) {
 .FirstViewContainer {
@@ -301,12 +322,13 @@ header a {
 
 
 @media (max-width: 767px) {
+
 .FirstViewContainer {
     padding-top: 0;
     width: 100%;
     max-width: 767px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .FirstViewContentTitle{
